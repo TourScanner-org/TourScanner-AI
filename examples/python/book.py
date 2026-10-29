@@ -51,7 +51,8 @@ hold = post("/api/booking/hold", {
     "startTime": slot["startTime"],
     "productOptionCode": option_code,
     "passengers": {"adults": 2},
-    "contact": {"firstName": "Ada", "lastName": "Lovelace", "email": "ada@example.com", "phone": "+393331234567"},
+    # The traveller's real details. The supplier sends the tickets here.
+    "contact": {"firstName": "<first name>", "lastName": "<last name>", "email": "<traveller email>", "phone": "<+ country code and number>"},
     "baseUrl": "http://localhost:3000",
 })
 print("ref:", hold["internalRef"])

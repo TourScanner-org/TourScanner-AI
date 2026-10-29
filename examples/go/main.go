@@ -180,8 +180,9 @@ func book(args []string) {
 		"productOptionCode": code,
 		"passengers":        map[string]int{"adults": 2},
 		"contact": map[string]string{
-			"firstName": "Ada", "lastName": "Lovelace",
-			"email": "ada@example.com", "phone": "+393331234567",
+			// The traveller's real details. The supplier sends the tickets here.
+			"firstName": "<first name>", "lastName": "<last name>",
+			"email": "<traveller email>", "phone": "<+ country code and number>",
 		},
 		"baseUrl": "http://localhost:3000",
 	}), &hold)

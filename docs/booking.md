@@ -38,8 +38,8 @@ curl -s -X POST $BASE/api/booking/hold \
     "productOptionCode": "FROM_OPTIONS",
     "passengers": { "adults": 2 },
     "contact": {
-      "firstName": "Ada", "lastName": "Lovelace",
-      "email": "ada@example.com", "phone": "+393331234567"
+      "firstName": "<first name>", "lastName": "<last name>",
+      "email": "<traveller email>", "phone": "<+ country code and number>"
     },
     "baseUrl": "https://yourapp.com"
   }'

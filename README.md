@@ -63,7 +63,7 @@ There's a remote MCP server at `https://tourscanner.ai/api/mcp`. It exposes 12 t
 - **Cents, not euros.** Every price field is in minor units.
 - **`productOptionCode` comes from `booking/options`.** The hold fails without it, and the codes differ per activity.
 - **`adults` is required** in `passengers`, and it has to be at least 1.
-- **Phone numbers need the country code**, like `+393331234567`. Anything else is rejected.
+- **Phone numbers need the country code**, like `+442079460000`. Anything else is rejected.
 - **Stripe sessions expire after 30 minutes.** After that the hold is released.
 - **Check availability right before booking.** Search results come from our catalog, and slots come live from the supplier. They can disagree.
 - **Not every provider books in-house.** For the others you hand the traveller off to the partner instead. Adding `providers=2,3,7` to a search limits it to the ones we book directly. The MCP `get_activity` tool reports this per activity as `bookableByUs`.
