@@ -1,4 +1,4 @@
-# TourScanner API guide
+# TourScanner AI guide
 
 How to use the [TourScanner](https://tourscanner.ai) API: search tours and activities, check live availability, and book them. It also covers the MCP server, if you want an AI agent to do the same thing.
 
